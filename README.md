@@ -10,3 +10,14 @@ go build -ldflags="-X 'github.com/sparmcgit/go-version.Version=1.0.0' \
         -o main_version .
 ```
 
+```
+package main
+
+import "github.com/sparmcgit/go-version"
+
+func main() {
+
+        version.GetVersion()
+}
+```
+
