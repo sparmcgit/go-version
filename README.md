@@ -1,5 +1,5 @@
 # go-version
-Set version, date and git commit to binary
+Set version, date and git commit in binary
 
 Example
 
