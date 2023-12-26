@@ -1,7 +1,7 @@
 # go-version
-Set version, date and git commit to binary\
+Set version, date and git commit to binary
 
-Example\
+Example
 
 ```
 go build -ldflags="-X 'github.com/sparmcgit/go-version.Version=1.0.0' \
