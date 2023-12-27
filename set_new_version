@@ -17,17 +17,19 @@ set_version() {
 
   local VERSION=$1
 
+  # Does the tag exist?
   EXIST=$(git tag --list ''${VERSION}'')
 
   if [ -z "$EXIST" ]
   then
     git commit -am "Update $VERSION"
     git tag "$VERSION"
+	
+    #pushes to branch.*.remote and defaults to origin
+	  git push "$VERSION"
+	  git push
   fi
 
-	#pushes to branch.*.remote and defaults to origin
-	git push "$VERSION"
-	git push
 }
 
 check_go_version_semantics $VERSION
